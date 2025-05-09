@@ -1,0 +1,25 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+
+.two_columns {
+    display: grid;
+    /* Enables grid layout */
+    grid-template-columns: 1fr 1fr;
+    /* Creates two equal-width columns */
+    gap: 10px;
+    /* Adds space between columns */
+}
+
+
+
+.column {
+    padding: 10px;
+    background-color: #f4d1ff;
+    /* Adds padding inside each column */
+}

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> 
+
 <head>
     <meta charset="UTF-8">
 </head>
@@ -22,7 +24,7 @@
     <br>
 
     <h4><i>Archived posts</i></h4>
-    <a href="{{click}}">
+    <a href="{{ url_for('archived_posts') }}">
         Check out my old Twitter posts about indie development :3
     </a>
 
