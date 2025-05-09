@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Title :p</title>
-        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> 
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <title>SUPERNOOB Studios</title>
+    <link rel="stylesheet" type = "text/css" href="{{ url_for('static', filename='style.css') }}"> 
+</head>
 
 
-    <body>
-        <div style="text-align: center; justify-content: center; align-items: center;">
-            <h1>Welcome to SUPERNOOB Studios</h1>
-            <p1>A blog for all things indie development - programming, art, and stuff  "^^</p1>
-        </div>
-        <div>
-            {% include 'archives_button.html' %}
-        </div>
-    </body>
+<body>
+    <div style="text-align: center; justify-content: center; align-items: center;">
+        <h1>Welcome to SUPERNOOB Studios</h1>
+        <p1>A blog for all things indie development - programming, art, and stuff  "^^</p1>
+    </div>
+    <div>
+        {% include 'archives_button.html' %}
+    </div>
+</body>
 
-    
+
 </html>

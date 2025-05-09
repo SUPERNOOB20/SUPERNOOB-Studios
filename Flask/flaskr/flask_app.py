@@ -10,7 +10,7 @@ from flask import Flask
 from flask import render_template
 from flask import url_for
 
-app = Flask(__name__, static_folder='../templates/static')
+app = Flask(__name__, static_folder='../static')
 
 @app.route("/")
 def init(name=None):
