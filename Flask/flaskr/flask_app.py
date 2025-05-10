@@ -7,13 +7,31 @@ parent_dir = os.path.dirname(current_dir)
 os.chdir(parent_dir)
 """
 
+# import os
+
 from flask import Flask
 from flask import render_template
 from flask import url_for
+# from flask import send_from_directory
+
+
 
 # app = Flask(__name__, static_folder='../static')
 app = Flask(__name__)
 
+"""
+app.add_url_rule(
+    "/favicon.ico",
+    endpoint="favicon",
+    redirect_to=url_for("static", filename="favicon.ico")
+)
+
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'static'),
+                               'favicon.ico', mimetype='image/vnd.microsoft.icon')
+"""
+                               
 @app.route("/")
 def init(name=None):
     return render_template("blog/index.html", person=name)

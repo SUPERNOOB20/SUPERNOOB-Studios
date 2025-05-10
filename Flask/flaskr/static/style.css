@@ -1,3 +1,5 @@
+html {background-color: rgb(174, 206, 210)}
+
 h1 {
     color: rgb(5, 139, 0);
 }
@@ -12,6 +14,47 @@ p {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+/*
+.square_container{
+    padding-top: 100%;
+}
+*/
+
+.height_proportional_to_screen_height{
+    height: 69vh;
+    width: 69vh;
+    /* width: height; */
+}
+
+/*
+.no_overflow{
+    overflow: hidden;
+}
+*/
+
+.horizontal_separator_strings{
+    overflow: hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    height: 12px;
+}
+
+/*
+.container{
+    width: 92vw;
+    margin: auto;
+    height:  10px;
+    border: 2px solid red;
+}
+*/
+
+
+.take_up_all_of_viewport_horizontally{
+    width: 95 vw;
 }
 
 
