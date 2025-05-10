@@ -23,12 +23,21 @@ p {
     /* Creates two equal-width columns */
     gap: 10px;
     /* Adds space between columns */
+    place-content: start space-evenly;
 }
 
 
 
 .column {
     padding: 10px;
-    background-color: #f4d1ff;
+    /* background-color: #f4d1ff; */
     /* Adds padding inside each column */
+}
+
+.column:nth-child(1){
+    background-color: #f4d1ff;
+}
+
+.column:nth-child(2){
+    background-color: #f4d1ff;
 }

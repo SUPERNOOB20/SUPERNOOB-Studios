@@ -1,16 +1,18 @@
-
+"""
 import os
 
 current_dir = os.path.dirname(__file__)
 parent_dir = os.path.dirname(current_dir)
 
 os.chdir(parent_dir)
+"""
 
 from flask import Flask
 from flask import render_template
 from flask import url_for
 
-app = Flask(__name__, static_folder='../static')
+# app = Flask(__name__, static_folder='../static')
+app = Flask(__name__)
 
 @app.route("/")
 def init(name=None):
