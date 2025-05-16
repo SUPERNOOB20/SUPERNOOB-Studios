@@ -10,16 +10,26 @@
 
 
     <body>
+
+        <div>
+            {% include 'blog/tabs_navigator.html' %}
+        </div>
+
+
         <div class = "two_columns" >
 
-            <div class = "column">
-                <img style="justify-content: center; align-items: center; margin: auto;" class="center true_sixteen_nine_ratio" src="{{url_for('static', filename='portfolio/#1.png')}}">
-                <img style="justify-content: center; align-items: center; margin: auto;" class="center true_sixteen_nine_ratio" src="{{url_for('static', filename='portfolio/#2.png')}}">
+            <div class = "column_but_blue">
+                <img style="justify-content: center; align-items: center; margin: auto;" class="center true_sixteen_nine_ratio smol_padding" src="{{url_for('static', filename='portfolio/#1.png')}}">
+                <img style="justify-content: center; align-items: center; margin: auto;" class="center true_sixteen_nine_ratio smol_padding" src="{{url_for('static', filename='portfolio/#3.png')}}">
+                <img style="justify-content: center; align-items: center; margin: auto;" class="center true_sixteen_nine_ratio smol_padding" src="{{url_for('static', filename='portfolio/#5.png')}}">
+                <img style="justify-content: center; align-items: center; margin: auto;" class="center true_sixteen_nine_ratio smol_padding" src="{{url_for('static', filename='portfolio/#7.png')}}">
             </div>
 
-            <div class = "column">
-                <img style="justify-content: center; align-items: center; margin: auto;" class="center true_sixteen_nine_ratio" src="{{url_for('static', filename='portfolio/#3.png')}}">
-                <img style="justify-content: center; align-items: center; margin: auto;" class="center true_sixteen_nine_ratio" src="{{url_for('static', filename='portfolio/#4.png')}}">
+            <div class = "column_but_blue">
+                <img style="justify-content: center; align-items: center; margin: auto;" class="center true_sixteen_nine_ratio smol_padding" src="{{url_for('static', filename='portfolio/#2.png')}}">
+                <img style="justify-content: center; align-items: center; margin: auto;" class="center true_sixteen_nine_ratio smol_padding" src="{{url_for('static', filename='portfolio/#4.png')}}">
+                <img style="justify-content: center; align-items: center; margin: auto;" class="center true_sixteen_nine_ratio smol_padding" src="{{url_for('static', filename='portfolio/#6.png')}}">
+                <img style="justify-content: center; align-items: center; margin: auto;" class="center true_sixteen_nine_ratio smol_padding" src="{{url_for('static', filename='portfolio/#8.png')}}">
             </div>
             
         </div>
