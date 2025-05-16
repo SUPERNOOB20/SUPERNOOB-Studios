@@ -28,6 +28,11 @@ p {
     /* width: height; */
 }
 
+.sixteen_nine_ratio{
+    height: 58vh;
+    width: 75vh;
+}
+
 /*
 .no_overflow{
     overflow: hidden;
@@ -77,10 +82,18 @@ p {
     /* Adds padding inside each column */
 }
 
-.column:nth-child(1){
+.column:nth-child(1) {
     background-color: #f4d1ff;
 }
 
-.column:nth-child(2){
+.column:nth-child(2) {
     background-color: #f4d1ff;
+}
+
+.box {
+  width: 320px;
+  height: 50px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
 }
