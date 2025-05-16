@@ -33,6 +33,11 @@ p {
     width: 75vh;
 }
 
+.true_sixteen_nine_ratio{
+    height: 50vh;
+    width: 89vh;
+}
+
 /*
 .no_overflow{
     overflow: hidden;
