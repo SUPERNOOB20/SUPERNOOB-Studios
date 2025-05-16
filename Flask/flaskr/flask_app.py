@@ -46,6 +46,10 @@ def hyperlink_to_archived_posts(name=None):
 def archived_posts(name=None):
     return render_template("archives.html")
 
+@app.route("/contact")
+def links(name=None):
+    return render_template("links.html")
+
 
 @app.route("/posts")
 def new_posts(name=None):
