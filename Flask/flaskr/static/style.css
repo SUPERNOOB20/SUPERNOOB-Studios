@@ -8,6 +8,81 @@ p {
     font-family: verdana;
 }
 
+p3 {
+    font-family: verdana;
+    font-size: 20px;
+}
+
+p8::-webkit-background-clip{
+    font-family: verdana;
+    font-size: 20px;
+    background: linear-gradient(to right, rgb(149, 0, 0), rgb(149, 149, 0), rgb(149, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p9::-webkit-background-clip{
+    font-family: verdana;
+    font-size: 20px;
+    /* background: linear-gradient(to right, rgb(0, 0, 149), rgb(149, 0, 0), rgb(255, 255, 255), rgb(149, 0, 0) rgb(0, 0, 149)); */
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(149, 0, 0) rgb(0, 0, 149));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.test{
+    background: #2A7B9B;
+    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+}
+
+.test2::-webkit-background-clip{
+    font-family: verdana;
+    font-size: 20px;
+    background: linear-gradient(to right, rgb(149, 0, 0), rgb(149, 149, 0), rgb(149, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    height:100%;
+}
+
+.test3::-webkit-background-clip{
+    font-family: verdana;
+    font-size: 20px;
+    /* background: linear-gradient(to right, rgb(0, 0, 149), rgb(149, 0, 0), rgb(255, 255, 255), rgb(149, 0, 0) rgb(0, 0, 149)); */
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(149, 0, 0) rgb(0, 0, 149));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    height:100%;
+}
+
+.gradient_esp::-webkit-background-clip{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-size: 6rem;
+    background: linear-gradient(to right, rgb(149, 0, 0), rgb(149, 149, 0), rgb(149, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    height:100%;
+}
+
+.gradient_eng::-webkit-background-clip{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-size: 6rem;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(149, 0, 0) rgb(0, 0, 149));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    height:100%;
+}
 
 .center {
     display: block;
@@ -21,6 +96,11 @@ p {
     padding-top: 100%;
 }
 */
+
+.humble_header {
+    font-size: 18px;
+    font-weight: bold;
+}
 
 .height_proportional_to_screen_height{
     height: 65vh;

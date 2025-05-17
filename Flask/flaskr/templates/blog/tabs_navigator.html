@@ -7,10 +7,11 @@
 </head>
 
 <body>
-    <a class = "box" href = "{{ url_for('portfolio') }}"> Portfolio </a>
-    <a class = "box" href = "{{ url_for('new_posts') }}"> New Posts </a>
-    <a class = "box" href = "{{ url_for('archived_posts') }}"> Archived Posts </a>
-    <a class = "box" style="margin: 20px; background-color: #DCF47C;" href = "{{ url_for('links') }}"> Contact me! </a>
+    <a class = "box"                                                                        href = "{{ url_for('portfolio') }}"> Portfolio </a>
+    <a class = "box" title = "My blog posts - from newest, to oldest :3"                    href = "{{ url_for('new_posts') }}"> New Posts </a>
+    <a class = "box" title = "Check out my old Twitter posts about indie development :3"    href = "{{ url_for('archived_posts') }}"> Archived Posts </a>
+    <a class = "box" title = "ESP - ENG translations of mine :3"                            href = "{{ url_for('translations') }}"> Translations </a>
+    <a class = "box" style = "margin: 20px; background-color: #DCF47C;"                   href = "{{ url_for('links') }}"> Contact me! </a>
 </body>
 
 </html>

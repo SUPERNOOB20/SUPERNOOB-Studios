@@ -50,7 +50,6 @@ def archived_posts(name=None):
 def links(name=None):
     return render_template("links.html")
 
-
 @app.route("/posts")
 def new_posts(name=None):
     # post = <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Programming monkey discovers Python JSON parsing after having done her whole saving system manually and scattered out in a txt file 🤦‍♀️ <a href="https://t.co/wTAomfY2eU">pic.twitter.com/wTAomfY2eU</a></p>&mdash; SUPERNOOB20 (@SUPERNOOB_20) <a href="https://twitter.com/SUPERNOOB_20/status/1920927904885596524?ref_src=twsrc%5Etfw">May 9, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -58,7 +57,14 @@ def new_posts(name=None):
     # return post
     return render_template("new_posts_section.html", person=name)
 
-
 @app.route("/portfolio")
 def portfolio(name=None):
     return render_template("portfolio.html", person=name)
+
+@app.route("/translations")
+def translations(name=None):
+    return render_template("translations.html")
+
+@app.route("/entrevista_a_juju_kenobi")
+def juju_interview(name=None):
+    return render_template("translations/eng_to_esp/juju_kenobi_interview.html")
