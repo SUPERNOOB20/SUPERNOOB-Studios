@@ -8,6 +8,13 @@ p {
     font-family: verdana;
 }
 
+<<<<<<< Updated upstream
+=======
+p3 {
+    font-family: verdana;
+    font-size: 20px;
+}
+>>>>>>> Stashed changes
 
 .center {
     display: block;
