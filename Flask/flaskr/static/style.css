@@ -100,8 +100,6 @@ p3 {
     width: 95 vw;
 }
 
-
-
 .two_columns {
     display: grid;
     /* Enables grid layout */
@@ -112,7 +110,30 @@ p3 {
     place-content: start space-evenly;
 }
 
+.two_columns_centered {
+    display: grid;
+    /* Enables grid layout */
+    grid-template-columns: 1fr 1fr;
+    /* Creates two equal-width columns */
+    gap: 10px;
+    /* Adds space between columns */
+    place-content: start space-evenly;
+}
 
+.two_columns_centered > div:nth-child(1) {
+    justify-self: end;
+    text-align: right;
+    justify-content: right;
+    align-items: right;
+    /* background-color: #00ff22; */
+}
+
+.two_columns_centered > div:nth-child(2) {
+    justify-self: start;
+    text-align: left;
+    justify-content: left;
+    align-items: left;
+}
 
 .column {
     padding: 10px;
@@ -120,15 +141,19 @@ p3 {
     /* Adds padding inside each column */
 }
 
-.column:nth-child(1) {
-    background-color: #f4d1ff;
+/*
+.column > div:nth-child(1) {
+    background-color: #ff0000;
 }
 
-.column:nth-child(2) {
+.column > div:nth-child(2) {
     background-color: #f4d1ff;
 }
+*/
 
-
+.column_no_colour{
+    padding: 10px;
+}
 
 .column_but_blue {
     padding: 10px;
@@ -136,14 +161,20 @@ p3 {
     /* Adds padding inside each column */
 }
 
-.column_but_blue:nth-child(1) {
+.column_but_blue > div:nth-child(1) {
     background-color: rgb(138, 195, 214);
 }
 
-.column_but_blue:nth-child(2) {
+.column_but_blue > div:nth-child(2) {
     background-color: rgb(138, 195, 214);
 }
 
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 .box {
   width: 320px;

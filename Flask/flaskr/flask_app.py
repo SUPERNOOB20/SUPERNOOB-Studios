@@ -36,11 +36,10 @@ def favicon():
 def init(name=None):
     return render_template("blog/index.html", person=name)
 
-@app.route("/archive")
-def hyperlink_to_archived_posts(name=None):
-    move_to = url_for("archived_posts", name=None)
-    # render_template("new_blog_posts.html", person=name)
-    return render_template("archives.html", click = move_to)
+# @app.route("/archive")
+# def hyperlink_to_archived_posts(name=None):
+    # move_to = url_for("archived_posts", name=None)
+    # return render_template("archives.html", click = move_to)
 
 @app.route("/archive")
 def archived_posts(name=None):
@@ -56,6 +55,10 @@ def new_posts(name=None):
     # return {% include 'post_template' %}
     # return post
     return render_template("new_posts_section.html", person=name)
+
+@app.route("/vocal_covers")
+def music(name=None):
+    return render_template("music.html")
 
 @app.route("/portfolio")
 def portfolio(name=None):
