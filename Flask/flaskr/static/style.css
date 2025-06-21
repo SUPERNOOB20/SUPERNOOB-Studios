@@ -14,6 +14,18 @@ p3 {
     font-size: 20px;
 }
 
+pO {
+    font-family: "Blackadder ITC";
+    font-size: 24px;
+    color: #69009E;
+}
+
+pT {
+    font-family: "Blackadder ITC";
+    font-size: 24px;
+    color: #0C9B00;
+}
+
 .esp {
     background-image: linear-gradient(90deg, red, yellow, red 85%);
     color: transparent;
