@@ -56,6 +56,10 @@ def new_posts(name=None):
     # return post
     return render_template("new_posts_section.html", person=name)
 
+@app.route("/lyric_composition")
+def vocal_composition(name=None):
+    return render_template("wind_god_girl.html")
+
 @app.route("/vocal_covers")
 def music(name=None):
     return render_template("music.html")
