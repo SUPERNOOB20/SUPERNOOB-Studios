@@ -15,13 +15,13 @@ p3 {
 }
 
 pO {
-    font-family: "Blackadder ITC";
+    font-family: "Blackadder ITC", "Kunstler Script", "Papyrus", serif;
     font-size: 24px;
     color: #69009E;
 }
 
 pT {
-    font-family: "Blackadder ITC";
+    font-family: "Blackadder ITC", "Kunstler Script", "Papyrus", serif;
     font-size: 24px;
     color: #0C9B00;
 }
@@ -211,6 +211,25 @@ pT {
   border: 4px solid red;    /* solid red; */
   border-radius: 20px 20px 20px 20px;
   border-color: rgb(207, 126, 126);
+}
+
+.orange_rounded_box {
+    width: 50px;
+    height: 25px;
+    padding: 10px;
+    margin: 0;
+
+    border: 4px solid rgb(207, 135, 0);     /* solid orange; */
+    border-color: rgb(207, 135, 0);    
+    border-radius: 20px 20px 20px 20px;    
+
+    background-color: #f4c47c;
+}
+
+.upper_right{
+    position: absolute;
+    top: -15px;
+    right: 130px;
 }
 
 .upper_right_corner {

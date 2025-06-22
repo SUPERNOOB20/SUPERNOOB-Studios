@@ -75,3 +75,7 @@ def translations(name=None):
 @app.route("/entrevista_a_juju_kenobi")
 def juju_interview(name=None):
     return render_template("translations/eng_to_esp/juju_kenobi_interview.html")
+
+@app.route("/credits")
+def credits(name=None):     # url_for('credits') will come here...! :3
+    return render_template("credits.html")
