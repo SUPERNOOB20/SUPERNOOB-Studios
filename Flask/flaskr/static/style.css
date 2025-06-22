@@ -51,6 +51,10 @@ pT {
     width: 50%;
 }
 
+.georgia_font {
+    font-family: "Noto Serif Georgian", Georgia, serif;
+}
+
 /*
 .square_container{
     padding-top: 100%;
