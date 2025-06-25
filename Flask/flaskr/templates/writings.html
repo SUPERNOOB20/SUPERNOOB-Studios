@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+
+    <head>
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>SUPERNOOB Studios</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> 
+    </head>
+
+
+    
+    <body>
+
+        <div>
+            {% include 'back_to_main_page.html' %}
+            {% include 'blog/tabs_navigator.html' %}
+        </div>
+
+        <br>
+        <br>
+        
+        <div style="justify-content: center; align-items: center; text-align: center;">       <!--     <div style = "padding-top: 10vh;">      -->
+            <iframe frameBorder = "0" style = "height: 80vh; width: 58vw; justify-content: center;" src="https://docs.google.com/document/d/e/2PACX-1vQwbO4jQdXA8dJND8k8CjgxBjml6ckOuPcUNMH-bUPE40wICJkaap7tpuUNe2rw7kQmKMEnkztyGSy5/pub?embedded=true"></iframe>
+        </div>
+
+        <br>
+
+        <p style="justify-content: center; align-items: center; margin: auto; text-align: center;"> Click <a href = "https://docs.google.com/document/d/1TLMgCALcw427QubTDJaH6HLbcfgqK9XoYg4BJIqRxb0/edit?usp=sharing">here</a> for a more comfortable reading... ":3</p>
+
+    </body>
+</html>

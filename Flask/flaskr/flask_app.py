@@ -64,6 +64,10 @@ def vocal_composition(name=None):
 def music(name=None):
     return render_template("music.html")
 
+@app.route("/research")
+def writings(name=None):
+    return render_template("writings.html")
+
 @app.route("/portfolio")
 def portfolio(name=None):
     return render_template("portfolio.html", person=name)
