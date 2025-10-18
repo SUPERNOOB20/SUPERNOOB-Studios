@@ -76,6 +76,10 @@ def portfolio(name=None):
 def translations(name=None):
     return render_template("translations.html")
 
+@app.route("/siervos")
+def song_siervos(name=None):
+    return render_template("translations/esp_to_eng/songs/siervos.html")
+
 @app.route("/entrevista_a_juju_kenobi")
 def juju_interview(name=None):
     return render_template("translations/eng_to_esp/juju_kenobi_interview.html")

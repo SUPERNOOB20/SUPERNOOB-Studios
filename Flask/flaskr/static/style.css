@@ -4,6 +4,14 @@ h1 {
     color: rgb(5, 139, 0);
 }
 
+h2 {
+    color: rgb(0, 0, 0);
+}
+
+h3 {
+    color: rgb(129, 129, 129);
+}
+
 p {
     font-family: verdana;
 }
@@ -24,6 +32,18 @@ pT {
     font-family: "Blackadder ITC", "Tangerine", "Kunstler Script", "Papyrus", serif;
     font-size: 24px;
     color: #0C9B00;
+}
+
+pO_2 {
+    font-family: "Blackadder ITC", "Tangerine", "Kunstler Script", "Papyrus", serif;
+    font-size: 24px;
+    color: #83004c;
+}
+
+pT_2 {
+    font-family: "Blackadder ITC", "Tangerine", "Kunstler Script", "Papyrus", serif;
+    font-size: 24px;
+    color: #810000;
 }
 
 .esp {
@@ -82,6 +102,10 @@ pT {
     height: 65vh;
     width: 65vh;
     /* width: height; */
+}
+
+.subtitle{
+    margin-top: 20px
 }
 
 .sixteen_nine_ratio{
