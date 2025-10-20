@@ -8,17 +8,8 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> 
     </head>
 
-
-
+    
     <body>
-
-        <div>
-            {% include 'back_to_main_page.html' %}
-            {% include 'blog/tabs_navigator.html' %}
-        </div>
-
-        <br>
-        <br>
 
         <div class = "two_columns">
             <div class = "column">
@@ -33,17 +24,5 @@
             </div>
         </div>
 
-
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-
-            <a href="{{ url_for('init') }}" >
-                Back to the main page :p
-            </a>
-
-        </body>
+    </body>
 </html>
