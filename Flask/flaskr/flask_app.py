@@ -19,27 +19,12 @@ from flask import url_for
 # app = Flask(__name__, static_folder='../static')
 app = Flask(__name__)
 
-"""
-app.add_url_rule(
-    "/favicon.ico",
-    endpoint="favicon",
-    redirect_to=url_for("static", filename="favicon.ico")
-)
 
-@app.route('/favicon.ico')
-def favicon():
-    return send_from_directory(os.path.join(app.root_path, 'static'),
-                               'favicon.ico', mimetype='image/vnd.microsoft.icon')
-"""
+
                                
 @app.route("/")
 def init(name=None):
     return render_template("blog/index.html", person=name)
-
-# @app.route("/archive")
-# def hyperlink_to_archived_posts(name=None):
-    # move_to = url_for("archived_posts", name=None)
-    # return render_template("archives.html", click = move_to)
 
 @app.route("/archive")
 def archived_posts(name=None):

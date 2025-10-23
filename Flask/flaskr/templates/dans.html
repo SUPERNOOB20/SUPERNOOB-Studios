@@ -5,7 +5,12 @@
         <meta charset="UTF-8">
         <title>SUPERNOOB Studios</title>
         <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
-        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> 
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund+Guides&display=swap" rel="stylesheet">
+
     </head>
 
 
@@ -29,22 +34,24 @@
         <br>
         <br>
 
-        <div style="text-align: center; justify-content: center; align-items: center;"></div>
+        <div style="text-align: center; justify-content: center; align-items: center;">
 
-            <h1>osu!taiko dans</h1>
+            <h1 style = "font-size: 72px;">osu!taiko dans</h1>
             <h3><i>(Ordered from easiest to hardest)</i></h3>
 
         </div>
 
         <br>
         <br>
-        * Mini-dans requirements: Pass.
-        * Dans: FC with the corresponding acc.
-
-        Rules:
-
-        Have a bancho account (osu api integration <strike>never</strike> soontm)
-        Allowed mods: NM, NF, HR, HD, DT, NC, FL.
+        * <b>Mini-dans</b> requirements: Pass.<br>
+        * <b>Dans</b>: FC with the corresponding acc.<br>
+        <br>
+        <br>
+        <br>
+        Rules:<br>
+        <br>
+        ** Have a bancho account (osu api integration <strike>never</strike> soontm)<br>
+        ** Allowed mods: NM, NF, HR, HD, DT, NC, FL.
 
         <br>
         <br>
@@ -56,6 +63,10 @@
         {% include 'blog/dans/beta.html' %}
 
         {% include 'blog/dans/gamma.html' %}
+
+        {% include 'blog/dans/delta.html' %}
+
+        {% include 'blog/dans/epsilon.html' %}
 
         {% include 'blog/dans/kami.html' %}
 
