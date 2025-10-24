@@ -198,6 +198,31 @@ pT_2 {
     align-items: left;
 }
 
+.two_columns_centered_3_to_1_ratio {
+    display: grid;
+    /* Enables grid layout */
+    grid-template-columns: 1fr 0.33fr;
+    /* Creates two equal-width columns */
+    gap: 10px;
+    /* Adds space between columns */
+    place-content: start space-evenly;
+}
+
+.two_columns_centered_3_to_1_ratio > div:nth-child(1) {
+    justify-self: end;
+    text-align: right;
+    justify-content: right;
+    align-items: right;
+    /* background-color: #00ff22; */
+}
+
+.two_columns_centered_3_to_1_ratio > div:nth-child(2) {
+    justify-self: start;
+    text-align: left;
+    justify-content: left;
+    align-items: left;
+}
+
 .column {
     padding: 10px;
     /* background-color: #f4d1ff; */
