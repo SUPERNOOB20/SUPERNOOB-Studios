@@ -46,6 +46,38 @@ def new_posts(name=None):
 def dans(name=None):
     return render_template("dans.html")
 
+@app.route("/dans_FAQ")
+def dans_FAQ(name=None):
+    return render_template("dans_FAQ.html")
+
+@app.route("/zako")
+def zako(name=None):
+    return render_template("blog/dans/zako.html")
+
+@app.route("/alpha")
+def alpha(name=None):
+    return render_template("blog/dans/alpha.html")
+
+@app.route("/beta")
+def beta(name=None):
+    return render_template("blog/dans/beta.html")
+
+@app.route("/gamma")
+def gamma(name=None):
+    return render_template("blog/dans/gamma.html")
+
+@app.route("/delta")
+def delta(name=None):
+    return render_template("blog/dans/delta.html")
+
+@app.route("/epsilon")
+def epsilon(name=None):
+    return render_template("blog/dans/epsilon.html")
+
+@app.route("/kami")
+def kami(name=None):
+    return render_template("blog/dans/kami.html")
+
 @app.route("/lyric_composition")
 def vocal_composition(name=None):
     return render_template("wind_god_girl.html")

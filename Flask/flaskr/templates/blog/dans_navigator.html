@@ -7,13 +7,17 @@
 </head>
 
 <body>
-    <a class = "box" title = "osu!taiko Zako dan & mini-dan"            >雑魚</a>
-    <a class = "box" title = "osu!taiko Alpha dan & mini-dan"           >Alpha</a>
-    <a class = "box" title = "osu!taiko Beta dan & mini-dan"            >Beta</a>
-    <a class = "box" title = "osu!taiko Gamma dan & mini-dan"           >Gamma</a>
-    <a class = "box" title = "osu!taiko Delta dan & mini-dan"           >Delta</a>
-    <a class = "box" title = "osu!taiko Epsilon dan & mini-dan"         >Epsilon</a>
-    <a class = "box" title = "osu!taiko Kami dan & mini-dan"            >神</a>
+    <a title = "Explains what my osu!taiko dans are about!" href = "{{ url_for('dans_FAQ') }}"><h2 class="dans_about_box">About</h2></a>
+
+    <a class = "box" title = "osu!taiko Zako dan & mini-dan"    href = "{{ url_for('zako') }}">雑魚</a>
+    <a class = "box" title = "osu!taiko Alpha dan & mini-dan"   href = "{{ url_for('alpha') }}">Alpha</a>
+    <a class = "box" title = "osu!taiko Beta dan & mini-dan"    href = "{{ url_for('beta') }}">Beta</a>
+    <a class = "box" title = "osu!taiko Gamma dan & mini-dan"   href = "{{ url_for('gamma') }}">Gamma</a>
+    <a class = "box" title = "osu!taiko Delta dan & mini-dan"   href = "{{ url_for('delta') }}">Delta</a>
+    <a class = "box" title = "osu!taiko Epsilon dan & mini-dan" href = "{{ url_for('epsilon') }}">Epsilon</a>
+    <a class = "box" title = "osu!taiko Kami dan & mini-dan"    href = "{{ url_for('kami') }}">神</a>
+
+    <a title = "Shows all dans in the same page :O" href = "{{ url_for('dans') }}"><h2 class="dans_all_box">All</h2></a>
 </body>
 
 </html>
