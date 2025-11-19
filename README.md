@@ -18,12 +18,12 @@ SUPERNOOB Studios' games strive for six general principles:
 
 # Current Projects
 
-[SD] <b>Stellar Defenders</b> is a <b><i>story-focused</i></b> visual novel, made for Windows. 50% made of RenPy and 50% made of Python. This project is currently in hiatus from lack of motivation (my PC is too potato to handle RenPy and Python smoothly), but I will eventually come back to it (maybe after RRA is released).
+[SD](https://github.com/SUPERNOOB20/Stellar-Defenders) <b>Stellar Defenders</b> is a <b><i>story-focused</i></b> visual novel, made for Windows. 50% made of RenPy and 50% made of Python. This project is currently in hiatus from lack of motivation (my PC is too potato to handle RenPy and Python smoothly), but I do plan on eventually coming back to it.
 
-[RRA] <b>Reimu's Ribbon Adventure</b> is a <b><i>gameplay-driven</i></b> platformer (more specifically: an IWBTG fangame that is also a Touhou fangame) made for the [GBA](https://en.wikipedia.org/wiki/Game_Boy_Advance) on the [butano](https://gvaliente.github.io/butano/index.html) game engine. Right now it's just C++, but I plan to make [ASM](url=https://en.wikipedia.org/wiki/Assembly_language) code for it as well (Thumb and ARMv7).
+[RRA](https://github.com/SUPERNOOB20/RRA) <b>Reimu's Ribbon Adventure</b> is a <b><i>gameplay-driven</i></b> platformer (more specifically: an IWBTG fangame that is also a Touhou fangame) made for the [GBA](https://en.wikipedia.org/wiki/Game_Boy_Advance) on the [butano](https://gvaliente.github.io/butano/index.html) game engine. Right now it's just C++, but I plan to make [ASM](url=https://en.wikipedia.org/wiki/Assembly_language) code for it as well (Thumb and ARMv7). This project is currently in hiatus from lack of motivation, but I do plan on eventually coming back to it.
 
-I don't have a release date for them yet, but I would like to have both of them finished by 2027.
+[THTCG](https://github.com/SUPERNOOB20/THTCG) <b>Touhou Card Game</b> is a <b><i>TCG</i></b> made for PC. Having learnt my lessons from Stellar Defenders, this one is WAY more optimised already (blend mode compositing is now done on CPU/GPU instead of loaded from storage), and will be even more optimised in the future (I am currently focusing on trying to render the playfield with OpenGL instead of pygame). The plan is to use python for P2P netplay (slightly hard for me), OpenGL for the rendering (SUPER hard for me), and my own C library for the animations (easy for me). This is certainly my most ambitious project these days "o.o
 
-I have also set for myself the soft deadline of September 21st, 2025 for a playable RRA demo.
+I don't have a release date for them yet, but I would like to have all of them finished by, say, 01/01/2027.
 
-In the future, I would like to develop more C/C++ games to enhance and put into practice my art and coding. The sky's the limit! :3
+In the future, I would like to enhance my OpenGL / Vulkan skills so I can develop more and more C/C++ games to improve and put into practice my art and coding. The sky's the limit! :3
