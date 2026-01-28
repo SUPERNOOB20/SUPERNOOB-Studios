@@ -1,3 +1,5 @@
+/* COLOURS AND TEXT */
+
 html {background-color: rgb(174, 206, 210)}
 
 h1 {
@@ -98,11 +100,7 @@ pT_2 {
 }
 
 
-/*
-.square_container{
-    padding-top: 100%;
-}
-*/
+/* PROPORTIONS */
 
 .humble_header {
     font-size: 18px;
@@ -162,6 +160,9 @@ pT_2 {
 .take_up_all_of_viewport_horizontally{
     width: 95 vw;
 }
+
+
+/* GRID SORCERY */
 
 .two_columns {
     display: grid;
@@ -263,6 +264,31 @@ pT_2 {
   clear: both;
   display: table;
 }
+
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+div.gallery-item {
+  margin: 5px;
+  border: 1px solid #ccc;
+  width: 40vw;
+}
+
+div.gallery-item:hover {
+  border: 1px solid #777;
+}
+
+div.gallery-item iframe {
+  width: 100%;
+  height: 100vh;
+}
+
+
+
+/* BOXES AND STUFF */
 
 .box {
   width: 320px;
@@ -370,6 +396,10 @@ p.small {
     padding: 15px;
     background-color: lightblue;
 }
+
+
+
+/* SIDEBARS */
 
 .sidenav {
   width: 140px;

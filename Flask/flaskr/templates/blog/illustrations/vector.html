@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> 
+</head>
+
+<body>
+
+    <div>
+        {% include 'back_to_main_page.html' %}
+        {% include 'blog/tabs_navigator.html' %}
+    </div>
+
+    <br>
+    <br>
+
+    <!-- <p1>click [[HERE]] for a .zip folder with ALL my source files.</p1> -->
+
+    <!-- "{{url_for('static', filename='portfolio/#1.png')}}"  -->
+
+
+    <div style="display: flex; flex-wrap: wrap">
+
+        <div class="gallery-item">
+            {% include 'blog/illustrations/plain_vectors/sanae.html' %}
+        </div>
+
+        <div class="gallery-item">
+            {% include 'blog/illustrations/plain_vectors/yuyuko.html' %}
+        </div>
+
+    </div>
+    
+</body>
+
+
+
+</html>

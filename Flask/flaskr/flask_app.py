@@ -1,18 +1,41 @@
-"""
-import os
-
-current_dir = os.path.dirname(__file__)
-parent_dir = os.path.dirname(current_dir)
-
-os.chdir(parent_dir)
-"""
-
-# import os
-
 from flask import Flask
 from flask import render_template
 from flask import url_for
-# from flask import send_from_directory
+
+# from osrparse import Replay
+
+# from flask_sqlalchemy import SQLAlchemy
+# from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
+
+
+
+"""
+app.config["SQLALCHEMY_DATABASE_URI"] = ""mysql+mysqldb://{SUPERNOOB20}:{password}@{hostname}/{dans_leaderboard}""
+
+class Base(DeclarativeBase):
+  pass
+
+db = SQLAlchemy(app, model_class=Base)
+
+class User(db.Model):
+    id: Mapped[int] = mapped_column(db.Integer, primary_key=True)
+    username: Mapped[str] = mapped_column(db.String, unique=True, nullable=False)
+
+with app.app_context():
+    db.create_all()
+
+    db.session.add(User(username="example"))
+    db.session.commit()
+
+    users = db.session.execute(db.select(User)).scalars()
+
+
+
+CREATE DATABASE [IF NOT EXISTS] test_database
+[CHARACTER SET charset_name]
+[COLLATE collation_name];
+"""
+
 
 
 
@@ -90,9 +113,32 @@ def music(name=None):
 def writings(name=None):
     return render_template("writings.html")
 
+
+
+
+
 @app.route("/portfolio")
 def portfolio(name=None):
-    return render_template("portfolio.html", person=name)
+    # return render_template("portfolio.html", person=name)
+    return render_template("blog/portfolio_navigator.html", person=name)
+
+@app.route("/portfolio/thumbnails")
+def portfolio_thumbnails(name=None):
+    # return render_template("portfolio.html", person=name)
+    return render_template("blog/illustrations/thumbnails.html", person=name)
+
+@app.route("/portfolio/vector_illustrations")
+def portfolio_vector(name=None):
+    # return render_template("portfolio.html", person=name)
+    return render_template("blog/illustrations/vector.html", person=name)
+
+@app.route("/portfolio/raster_illustrations")
+def portfolio_raster(name=None):
+    # return render_template("portfolio.html", person=name)
+    return render_template("blog/illustrations/raster.html", person=name)
+
+
+
 
 @app.route("/translations")
 def translations(name=None):

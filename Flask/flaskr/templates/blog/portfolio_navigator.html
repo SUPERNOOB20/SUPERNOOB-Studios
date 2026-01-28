@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> 
+</head>
+
+<body>
+
+    <a class = "box" title = "Youtube thumbnails"    href = "{{ url_for('portfolio_thumbnails') }}">Thumbnails</a>
+    <a class = "box" title = "vector illustrations"   href = "{{ url_for('portfolio_vector') }}">Vector</a>
+    <a class = "box" title = "raster illustrations"    href = "{{ url_for('portfolio_raster') }}">Raster</a>
+
+</body>
+
+</html>
