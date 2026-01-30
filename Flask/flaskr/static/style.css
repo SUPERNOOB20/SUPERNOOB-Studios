@@ -414,6 +414,17 @@ p.small {
     background-color: lightblue;
 }
 
+/* DANS RELATIVE RENDERING */
+
+.position_for_zako_1a{
+    display: grid;
+    place-content: center;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+
 
 
 /* SIDEBARS */
