@@ -416,15 +416,35 @@ p.small {
 
 /* DANS RELATIVE RENDERING */
 
-.position_for_zako_1a{
+.overlapping{
     display: grid;
     place-content: center;
 
+    /* width: 40vw; */
+
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+
+    position: relative;
 }
 
+.overlapping .bg{
+    grid-area: 1/1;
+    z-index: 1;
+}
 
+.overlapping .icons{
+    grid-area: 1/1;
+    z-index: 2;
+}
+
+.overlapping .info{
+    grid-area: 1/1;
+    z-index: 3;
+    position: relative;
+    top: 2vh;
+    left: 8vh;
+}
 
 
 /* SIDEBARS */

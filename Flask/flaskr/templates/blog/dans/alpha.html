@@ -21,8 +21,10 @@
         <br>
         <br>
 
-        <svg src="{{url_for('static', filename='dans/icons/icons_black.svg')}}"></svg>
-        <svg src="{{url_for('static', filename='dans/icons/icons_white.svg')}}"></svg>
+        <img src="{{url_for('static', filename='dans/icons/icons_black.svg')}}" style = "height:36.25vh">
+        <img src="{{url_for('static', filename='dans/icons/icons_white.svg')}}" style = "height:36.25vh">
+        <img src="{{url_for('static', filename='dans/info/delta3_info.svg')}}" style = "height:36.25vh">
+        <img src="{{url_for('static', filename='dans/info/zako1_info.svg')}}" style = "height:36.25vh">
 
         <div style="text-align: center; justify-content: center; align-items: center;">
             <h2 style = "font-size: 72px;" style="text-align: center; justify-content: center; align-items: center;">ALPHA</h2>
@@ -107,8 +109,12 @@
                         <a><img style = "height:36.25vh; justify-self: center;" src = "{{url_for('static', filename='dans/newbie_bg.jpg')}}"></a>
                     </div>
 
-                    <div>
-                        <a><img style = "height:36.25vh; justify-self: center;" src = "{{url_for('static', filename='dans/newbie_info.png')}}"></a>
+                    <div class="overlapping">
+                        <!-- <a><img style = "height:36.25vh; justify-self: center;" src = "{{url_for('static', filename='dans/newbie_info.png')}}"></a> -->
+                        <img class="bg" src="{{url_for('static', filename='dans/BGs/alpha_bg.png')}}" style = "height:36.25vh">
+                        <img class="icons" src="{{url_for('static', filename='dans/icons/icons_black.svg')}}" style = "height:36.25vh">
+                        <img class="info" style = "height:32.25vh" src="{{url_for('static', filename='dans/info/zako1_info.svg')}}">
+
                     </div>
                 </div>
             <a href = "https://drive.google.com/drive/folders/1riX1XlsohN9TNqvrnojaQ2LIw1VM1ghc?usp=sharing">
