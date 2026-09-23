@@ -22,10 +22,10 @@ SUPERNOOB Studios' games strive for six general principles:
 
 # Current Projects
 
-[supermotor](https://github.com/SUPERNOOB20/supermotor) My own game engine. C/C++ and uses SDL3.
-[superchess](https://github.com/SUPERNOOB20/superchess) C++ pet project. On hiatus right now from lack of time. But will come back to it eventually.
-
-[SD](https://github.com/SUPERNOOB20/Stellar-Defenders) <b>Stellar Defenders</b> is a <b><i>story-focused</i></b> visual novel, made for Windows. 50% made of RenPy and 50% made of Python. This project is currently in hiatus from lack of motivation (my PC is too potato to handle RenPy and Python smoothly), but I do plan on eventually coming back to it. <--- Will be re-done in C++ in the future.<be>
+[supermotor](https://github.com/SUPERNOOB20/supermotor) My own game engine. C/C++ and uses SDL3. <br>
+[superchess](https://github.com/SUPERNOOB20/superchess) C++ pet project. On hiatus right now from lack of time. But will come back to it eventually. <br>
+<br>
+[SD](https://github.com/SUPERNOOB20/Stellar-Defenders) <b>Stellar Defenders</b> is a <b><i>story-focused</i></b> visual novel, made for Windows. 50% made of RenPy and 50% made of Python. This project is currently in hiatus from lack of motivation (my PC is too potato to handle RenPy and Python smoothly), but I do plan on eventually coming back to it. <--- Will be re-done in C++ in the future.<br>
 
 fashion gaem: WIP. A collection of minigames which earn you coins to customise your character. C++ and supermotor. <br>
 
