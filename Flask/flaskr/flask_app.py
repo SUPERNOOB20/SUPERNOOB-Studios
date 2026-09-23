@@ -109,13 +109,21 @@ def vocal_composition(name=None):
 def music(name=None):
     return render_template("music.html")
 
-@app.route("/research")
-def writings(name=None):
+@app.route("/writings/research/essays")
+def essays(name=None):
     return render_template("writings.html")
 
+@app.route("/writings/research/maths")
+def maths(name=None):
+    return render_template("maths.html")
 
 
 
+
+# Writings and research.
+@app.route("/writings")
+def writings(name=None):
+    return render_template("blog/writings_navigator.html", person=name)
 
 @app.route("/portfolio")
 def portfolio(name=None):

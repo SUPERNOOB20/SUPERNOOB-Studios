@@ -108,8 +108,8 @@ pT_2 {
 }
 
 .height_proportional_to_screen_height{
-    height: 65vh;
-    width: 65vh;
+    height: 50vh;	/* Previously: 65vh */
+    width: 50vh;    /* Previously: 65vh */
     /* width: height; */
 }
 

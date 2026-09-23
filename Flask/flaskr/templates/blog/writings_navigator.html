@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> 
+</head>
+
+<body>
+
+    <div style="text-align: center; justify-content: center; align-items: center;">
+        {% include 'blog/tabs_navigator.html' %}
+    </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+    <p1>Research</p1> &nbsp; &nbsp; &nbsp;
+    <a class = "box" title = "Maths"    href = "{{ url_for('maths') }}">Maths</a>
+    <a class = "box" title = "Essays"   href = "{{ url_for('essays') }}">Social sciences</a>
+
+<br>
+<br>
+<br>
+
+    <p1>Others</p1> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    ...
+
+</body>
+
+</html>
