@@ -49,6 +49,10 @@ app = Flask(__name__)
 def init(name=None):
     return render_template("blog/index.html", person=name)
 
+@app.route("/test")
+def test(name=None):
+    return render_template("emscripten_projects/test3/emscripten_test.html", person=name)
+
 @app.route("/archive")
 def archived_posts(name=None):
     return render_template("archives.html")
